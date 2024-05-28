@@ -22,7 +22,7 @@ public class Room {
     public int getNumberOfBeds() {
         return numberOfBeds;
     }
-    public int getcenaPokoje() {
+    public int getRoomPrice() {
         return roomPrice;
     }
 
@@ -34,7 +34,7 @@ public class Room {
         return hasSeeView;
     }
 
-    public int iscenaPokoje() {
+    public int isRoomPrice() {
         return roomPrice;
     }
 
@@ -53,7 +53,7 @@ public class Room {
     public void setHasSeeView(boolean hasSeeView) {
         this.hasSeeView = hasSeeView;
     }
-    public void setcenaPokoje(int cenaPokoje) {
-        this.roomPrice = cenaPokoje;
+    public void setroomPrice(int roomPrice) {
+        this.roomPrice = roomPrice;
     }
 }

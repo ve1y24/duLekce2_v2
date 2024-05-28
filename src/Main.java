@@ -19,31 +19,32 @@ import java.util.List;
         Print.printGuest(host1);
         Print.printGuest(host2);
 
-        Room pokoj1 = new Room(1,1,true,true,1000);
-        Room pokoj2 = new Room(2,1,true,true,1000);
-        Room pokoj3 = new Room(3,3,false,true,2400);
+        Room room1 = new Room(1,1,true,true,1000);
+        Room room2 = new Room(2,1,true,true,1000);
+        Room room3 = new Room(3,3,false,true,2400);
 
-        Print.printRoom(pokoj1);
-        Print.printRoom(pokoj2);
-        Print.printRoom(pokoj3);
+        Print.printRoom(room1);
+        Print.printRoom(room2);
+        Print.printRoom(room3);
 
-        LocalDate datumOd1 = LocalDate.of(2021,7,19);
-        LocalDate datumDo1 = LocalDate.of(2021,7,26);
-        List<Guest> hosteRezervace1 = new ArrayList<>();
-        hosteRezervace1.add(host1);
-        Booking rezervace1 = new Booking(1, datumOd1, datumDo1, hosteRezervace1);
+        LocalDate dateFrom1 = LocalDate.of(2021,7,19);
+        LocalDate dateTo1 = LocalDate.of(2021,7,26);
+        List<Guest> rezervation1Guests = new ArrayList<>();
+        rezervation1Guests.add(host1);
+        Booking rezervation1 = new Booking( room1, dateFrom1, dateTo1, rezervation1Guests);
 
-        List<Booking> rezervaceALL = new ArrayList<>();
-        rezervaceALL.add(rezervace1);
+        List<Booking> rezervationAll = new ArrayList<>();
+        rezervationAll.add(rezervation1);
 
-        LocalDate datumOd2 = LocalDate.of(2021,9,1);
-        LocalDate datumDo2 = LocalDate.of(2021,9,14);
-        List<Guest> hosteRezervace2 = new ArrayList<>();
-        hosteRezervace2.add(host1);
-        hosteRezervace2.add(host2);
-        Booking rezervace2 = new Booking(3, datumOd2, datumDo2, hosteRezervace2);
-        rezervaceALL.add(rezervace2);
+        LocalDate dateFrom2 = LocalDate.of(2021,9,1);
+        LocalDate dateTo2 = LocalDate.of(2021,9,14);
+        List<Guest> rezervation2Guests = new ArrayList<>();
+        rezervation2Guests.add(host1);
+        rezervation2Guests.add(host2);
 
-        Print.printRezervation(rezervaceALL);
+        Booking rezervace2 = new Booking(room3, dateFrom2, dateTo2, rezervation2Guests);
+        rezervationAll.add(rezervace2);
+
+        Print.printRezervation(rezervationAll);
 
     }

@@ -34,7 +34,7 @@ public class Booking {
         return rezervationGuests = new ArrayList<>(rezervationGuests);
     }
 
-    public void setRezervationRoom(List <Room> ) {
+    public void setRezervationRoom(List <Room> rezervationRoom) {
         this.rezervationRoom = new ArrayList<>(rezervationRoom);
     }
 

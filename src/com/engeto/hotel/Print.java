@@ -5,12 +5,12 @@ import java.util.List;
 
 public class Print {
 
-    public static void printGuest(Guest tiskHost) {
+    public static void printGuest(Guest printGuest) {
 
         DateTimeFormatter FOMATTER = DateTimeFormatter.ofPattern("dd. MM. yyyy");
 
-        System.out.println(tiskHost.getGuestFirstName()+" "+tiskHost.getGuestLastName()
-                +" (datum narození: "+FOMATTER.format(tiskHost.getGuestBirthDate())+")");
+        System.out.println(printGuest.getGuestFirstName()+" "+printGuest.getGuestLastName()
+                +" (datum narození: "+FOMATTER.format(printGuest.getGuestBirthDate())+")");
     }
 
     public static void printRoom(Room tiskPokoj) {
@@ -33,20 +33,20 @@ public class Print {
 
         System.out.println(tiskPokoj.getNumberOfBeds()
                 +"-lůžkový pokoj č." + tiskPokoj.getRoomNumber()
-                +" za cenu " + tiskPokoj.getcenaPokoje() +" Kč, "
+                +" za cenu " + tiskPokoj.getRoomPrice() +" Kč, "
                 +"balkón: " + balkon
                 + ", výhled na moře: " + vyhled);
     }
 
-    public static void printRezervation(List<Booking> rezervaceVsechny){
+    public static void printRezervation(List<Booking> rezervationALL){
         DateTimeFormatter FOMATTER = DateTimeFormatter.ofPattern("dd. MM. yyyy");
-        for (Booking pomocna : rezervaceVsechny) {
-            System.out.println("Pokoj č. "+pomocna.getrezervationRoom()
-                    + " je rezervovaný v období od "+FOMATTER.format(pomocna.getRezervationStart())
-                    + " do "+FOMATTER.format(pomocna.getRezervationEnd())
+        for (Booking x1 : rezervationALL) {
+            System.out.println("Pokoj č. "+x1.getRezervationRoom()
+                    + " je rezervovaný v období od "+FOMATTER.format(x1.getRezervationStart())
+                    + " do "+FOMATTER.format(x1.getRezervationEnd())
                     + " pro ");
-            for (Guest pomocna2 : pomocna.getRezervationGuests() ) {
-                System.out.print(pomocna2.getGuestFirstName()+" ");
+            for (Guest x2 : x1.getRezervationGuests() ) {
+                System.out.print(x2.getGuestFirstName()+" ");
             }
         }
 

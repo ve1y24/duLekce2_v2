@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="491cb373-2c70-463a-be07-e5068780e99a" name="Changes" comment="DÚ lekce 2 - hotovo, jen řádkování nějak &quot;zlobí&quot;">
+    <list default="true" id="491cb373-2c70-463a-be07-e5068780e99a" name="Changes" comment="DÚ lekce 2&#10;&#10;Booking už má místo jen čísla pokoje třídu Room">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engeto/hotel/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/hotel/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engeto/hotel/Guest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/hotel/Guest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engeto/hotel/Prints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/hotel/Print.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/engeto/hotel/Print.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/hotel/Print.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engeto/hotel/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/hotel/Room.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +73,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716144331605</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="DÚ lekce 2&#10;&#10;Booking už má místo jen čísla pokoje třídu Room">
+      <option name="closed" value="true" />
+      <created>1716927386615</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716927386615</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,7 +98,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="DÚ lekce 2 - hotovo" />
     <MESSAGE value="DÚ lekce 2 - hotovo, jen řádkování nějak &quot;zlobí&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="DÚ lekce 2 - hotovo, jen řádkování nějak &quot;zlobí&quot;" />
+    <MESSAGE value="DÚ lekce 2&#10;&#10;Booking už má místo jen čísla pokoje třídu Room" />
+    <option name="LAST_COMMIT_MESSAGE" value="DÚ lekce 2&#10;&#10;Booking už má místo jen čísla pokoje třídu Room" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -103,7 +111,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>43</line>
+          <line>44</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

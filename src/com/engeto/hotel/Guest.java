@@ -3,37 +3,37 @@ package com.engeto.hotel;
 import java.time.LocalDate;
 
 public class Guest {
-    String jmenoHosta;
-    String prijmeniHosta;
-    LocalDate datumNarozeni;
+    String guestFirstName;
+    String guestLastName;
+    LocalDate guestBirthDate;
 
-    public Guest(String jmenoHosta, String prijmeniHosta, LocalDate datumNarozeni) {
-        this.jmenoHosta = jmenoHosta;
-        this.prijmeniHosta = prijmeniHosta;
-        this.datumNarozeni = datumNarozeni;
+    public Guest(String guestFirstName, String guestLastName, LocalDate guestBirthDate) {
+        this.guestFirstName = guestFirstName;
+        this.guestLastName = guestLastName;
+        this.guestBirthDate = guestBirthDate;
     }
 
-    public String getJmenoHosta() {
-        return jmenoHosta;
+    public String getGuestFirstName() {
+        return guestFirstName;
     }
 
-    public String getPrijmeniHosta() {
-        return prijmeniHosta;
+    public String getGuestLastName() {
+        return guestLastName;
     }
 
-    public LocalDate getDatumNarozeni() {
-        return datumNarozeni;
+    public LocalDate getGuestBirthDate() {
+        return guestBirthDate;
     }
 
-    public void setJmenoHosta(String jmenoHosta) {
-        this.jmenoHosta = jmenoHosta;
+    public void setGuestFirstName(String guestFirstName) {
+        this.guestFirstName = guestFirstName;
     }
 
-    public void setPrijmeniHosta(String prijmeniHosta) {
-        this.prijmeniHosta = prijmeniHosta;
+    public void setGuestLastName(String guestLastName) {
+        this.guestLastName = guestLastName;
     }
 
-    public void setDatumNarozeni(LocalDate datumNarozeni) {
-        this.datumNarozeni = datumNarozeni;
+    public void setGuestBirthDate(LocalDate guestBirthDate) {
+        this.guestBirthDate = guestBirthDate;
     }
 }

@@ -1,60 +1,59 @@
 package com.engeto.hotel;
 
 public class Room {
-    int cisloPokoje;
-    int pocetLukzek;
-    boolean maBalkon;
-    boolean maVyhledNaMore;
-    int cenaPokoje;
+    int roomNumber;
+    int numberOfBeds;
+    boolean hasBalkoon;
+    boolean hasSeeView;
+    int roomPrice;
 
-    public Room(int cisloPokoje, int pocetLuzek, boolean maBalkon, boolean maVyhledNaMore, int cenaPokoje) {
-        this.cisloPokoje = cisloPokoje;
-        this.pocetLukzek = pocetLuzek;
-        this.maBalkon = maBalkon;
-        this.maVyhledNaMore = maVyhledNaMore;
-        this.cenaPokoje = cenaPokoje;
+    public Room(int roomNumber, int numberOfBeds, boolean hasBalkoon, boolean hasSeeView, int roomPrice) {
+        this.roomNumber = roomNumber;
+        this.numberOfBeds = numberOfBeds;
+        this.hasBalkoon = hasBalkoon;
+        this.hasSeeView = hasSeeView;
+        this.roomPrice = roomPrice;
     }
 
-    public int getCisloPokoje() {
-        return cisloPokoje;
+    public int getRoomNumber() {
+        return roomNumber;
     }
 
-    public int getPocetLukzek() {
-        return pocetLukzek;
+    public int getNumberOfBeds() {
+        return numberOfBeds;
     }
     public int getcenaPokoje() {
-        return cenaPokoje;
+        return roomPrice;
     }
 
-    public boolean isMaBalkon() {
-        return maBalkon;
+    public boolean isHasBalkoon() {
+        return hasBalkoon;
     }
 
-    public boolean isMaVyhledNaMore() {
-        return maVyhledNaMore;
+    public boolean isHasSeeView() {
+        return hasSeeView;
     }
 
     public int iscenaPokoje() {
-        return cenaPokoje;
+        return roomPrice;
     }
 
-    public void setCisloPokoje(int cisloPokoje) {
-        this.cisloPokoje = cisloPokoje;
+    public void setRoomNumber(int roomNumber) {
+        this.roomNumber = roomNumber;
     }
 
-    public void setPocetLukzek(int pocetLukzek) {
-        this.pocetLukzek = pocetLukzek;
+    public void setNumberOfBeds(int numberOfBeds) {
+        this.numberOfBeds = numberOfBeds;
     }
 
-    public void setMaBalkon(boolean maBalkon) {
-        this.maBalkon = maBalkon;
+    public void setHasBalkoon(boolean hasBalkoon) {
+        this.hasBalkoon = hasBalkoon;
     }
 
-    public void setMaVyhledNaMore(boolean maVyhledNaMore) {
-        this.maVyhledNaMore = maVyhledNaMore;
+    public void setHasSeeView(boolean hasSeeView) {
+        this.hasSeeView = hasSeeView;
     }
     public void setcenaPokoje(int cenaPokoje) {
-        this.cenaPokoje = cenaPokoje;
+        this.roomPrice = cenaPokoje;
     }
 }
-// ******************************************************************************************

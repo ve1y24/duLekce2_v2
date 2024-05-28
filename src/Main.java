@@ -31,7 +31,7 @@ import java.util.List;
         LocalDate dateTo1 = LocalDate.of(2021,7,26);
         List<Guest> rezervation1Guests = new ArrayList<>();
         rezervation1Guests.add(host1);
-        Booking rezervation1 = new Booking( room1, dateFrom1, dateTo1, rezervation1Guests);
+        Booking rezervation1 = new Booking(room1, dateFrom1, dateTo1, rezervation1Guests);
 
         List<Booking> rezervationAll = new ArrayList<>();
         rezervationAll.add(rezervation1);

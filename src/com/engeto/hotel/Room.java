@@ -7,11 +7,11 @@ public class Room {
     boolean hasSeeView;
     int roomPrice;
 
-    public Room(int roomNumber, int numberOfBeds, boolean hasBalkoon, boolean hasSeeView, int roomPrice) {
+    public Room(int roomNumber, int numberOfBeds, boolean hasBalkoon, boolean hasSeaView, int roomPrice) {
         this.roomNumber = roomNumber;
         this.numberOfBeds = numberOfBeds;
         this.hasBalkoon = hasBalkoon;
-        this.hasSeeView = hasSeeView;
+        this.hasSeeView = hasSeaView;
         this.roomPrice = roomPrice;
     }
 

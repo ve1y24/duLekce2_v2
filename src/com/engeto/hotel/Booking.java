@@ -5,21 +5,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Booking {
-    List<Room> rezervationRoom = new ArrayList<>();
+    Room rezervationRoom;
     LocalDate rezervationStart;
     LocalDate rezervationEnd;
     List<Guest> rezervationGuests = new ArrayList<>();
 
 
-    public Booking(List<Room> rezervationRoom, LocalDate rezervationStart, LocalDate rezervationEnd, List<Guest> rezervationGuests) {
+    public Booking(Room rezervationRoom, LocalDate rezervationStart, LocalDate rezervationEnd, List<Guest> rezervationGuests) {
         this.rezervationRoom = rezervationRoom;
         this.rezervationStart = rezervationStart;
         this.rezervationEnd = rezervationEnd;
         this.rezervationGuests = rezervationGuests;
     }
 
-    public List<Room> getRezervationRoom() {
-        return rezervationRoom = new ArrayList<>(rezervationRoom);
+    public Room getRezervationRoom() {
+        return rezervationRoom;
     }
 
     public LocalDate getRezervationStart() {
@@ -34,8 +34,8 @@ public class Booking {
         return rezervationGuests = new ArrayList<>(rezervationGuests);
     }
 
-    public void setRezervationRoom(List <Room> rezervationRoom) {
-        this.rezervationRoom = new ArrayList<>(rezervationRoom);
+    public void setRezervationRoom(Room rezervationRoom) {
+        this.rezervationRoom = rezervationRoom;
     }
 
     public void setRezervationStart(LocalDate rezervationStart) {

@@ -2,6 +2,7 @@ package com.engeto.hotel;
 
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+import com.engeto.hotel.Booking;
 
 public class Print {
 
@@ -41,7 +42,7 @@ public class Print {
     public static void printRezervation(List<Booking> rezervationALL){
         DateTimeFormatter FOMATTER = DateTimeFormatter.ofPattern("dd. MM. yyyy");
         for (Booking x1 : rezervationALL) {
-            System.out.println("Pokoj č. "+x1.getRezervationRoom()
+            System.out.println("Pokoj č. "+x1.getRezervationRoom().getRoomNumber()
                     + " je rezervovaný v období od "+FOMATTER.format(x1.getRezervationStart())
                     + " do "+FOMATTER.format(x1.getRezervationEnd())
                     + " pro ");

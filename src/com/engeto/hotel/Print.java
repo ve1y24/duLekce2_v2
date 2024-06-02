@@ -2,7 +2,6 @@ package com.engeto.hotel;
 
 import java.time.format.DateTimeFormatter;
 import java.util.List;
-import com.engeto.hotel.Booking;
 
 public class Print {
 
@@ -14,7 +13,7 @@ public class Print {
                 +" (datum narození: "+FOMATTER.format(printGuest.getGuestBirthDate())+")");
     }
 
-    public static void PrintRoom(Room printRoom) {
+    public static void printRoom(Room printRoom) {
         String balcoon;
         String view;
 

@@ -3,9 +3,9 @@ package com.engeto.hotel;
 import java.time.LocalDate;
 
 public class Guest {
-    String guestFirstName;
-    String guestLastName;
-    LocalDate guestBirthDate;
+    private String guestFirstName;
+    private String guestLastName;
+    private LocalDate guestBirthDate;
 
     public Guest(String guestFirstName, String guestLastName, LocalDate guestBirthDate) {
         this.guestFirstName = guestFirstName;

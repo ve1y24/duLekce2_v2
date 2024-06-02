@@ -23,9 +23,9 @@ import java.util.List;
         Room room2 = new Room(2,1,true,true,1000);
         Room room3 = new Room(3,3,false,true,2400);
 
-        Print.PrintRoom(room1);
-        Print.PrintRoom(room2);
-        Print.PrintRoom(room3);
+        Print.printRoom(room1);
+        Print.printRoom(room2);
+        Print.printRoom(room3);
 
         LocalDate dateFrom1 = LocalDate.of(2021,7,19);
         LocalDate dateTo1 = LocalDate.of(2021,7,26);

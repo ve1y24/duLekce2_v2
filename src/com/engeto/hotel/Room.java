@@ -1,11 +1,11 @@
 package com.engeto.hotel;
 
 public class Room {
-    int roomNumber;
-    int numberOfBeds;
-    boolean hasBalkoon;
-    boolean hasSeeView;
-    int roomPrice;
+    private int roomNumber;
+    private int numberOfBeds;
+    private boolean hasBalkoon;
+    private boolean hasSeeView;
+    private int roomPrice;
 
     public Room(int roomNumber, int numberOfBeds, boolean hasBalkoon, boolean hasSeaView, int roomPrice) {
         this.roomNumber = roomNumber;
